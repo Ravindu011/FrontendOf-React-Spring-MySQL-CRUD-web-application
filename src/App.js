@@ -9,13 +9,12 @@ import AddUser from './users/AddUser';
 function App() {
   return (
     <div className="App">
-      
       <Router>
       <Navbar/>
+      
       <Routes>
         <Route exact path='/' element={<Home/>}></Route>
         <Route exact path='/adduser' element={<AddUser/>}></Route>
-
       </Routes>
       </Router>
     </div>

@@ -1,5 +1,5 @@
 import axios from 'axios'
-import React, { useState } from 'react'
+import {React, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 export default function AddUser() {
@@ -30,10 +30,11 @@ export default function AddUser() {
       navigate("/")
     }
     
+    const [value, setValue] = useState ('');
+    const [error, setError] = useState ('');
   }
 
-  const [value, setValue] = useState ('');
-  const [error, setError] = useState ('');
+
 
   // const handleChange = (e) => {
   //   setValue(e.target.value);
